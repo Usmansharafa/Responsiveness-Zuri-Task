@@ -36,7 +36,8 @@ main{
 }
 
 .left h1{
-    font-size: 56px;
+    font-size: 50px;
+    font-weight: 700;
 }
 
 .left p{
@@ -101,4 +102,33 @@ form p{
 
 .terms{
     color: rgba(255, 121, 120, 1);
+}
+
+@media (max-width: 900px) {
+    body{
+        background: url(./images/bg-intro-mobile.png), rgba(255, 121, 120, 1);
+    }    
+    main{
+        width: 80%;
+        max-width: 410px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .flex-container{
+        width: 100%;
+        display: block;
+    }   
+    .left{
+        margin-top: 40px;
+    }
+    .left, .right{
+        width: 100%;
+        padding: 24px;
+    }
+    .left h1{
+        font-size: 30px;
+    }
+    .right .header{
+        height: 60px;;
+    }        
 }
