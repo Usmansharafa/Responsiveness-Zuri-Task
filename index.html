@@ -7,7 +7,6 @@
     <title>Responsive Webpage</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="styles.css">
-    <script src="./script.js"></script>
 </head>
 <body>
     <main>
@@ -18,20 +17,21 @@
             </div>
             <div class="right">
                 <div class="header"><p><span>Try it free 7 days</span> then $20/mo. thereafter</p></div>
-                <form action="#">
+                <form action="#" id="registration-form">
                     <input type="text" name="first-name" id="first-name" placeholder="Jonathan" required autofocus>
-                    <p class="error-text"><em>First Name cannot be empty</em></p>
+                    <p class="error-text" id="fn-erro"><em>First Name cannot be empty</em></p>
                     <input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
-                    <p class="error-text"><em>Last Name cannot be empty</em></p>
+                    <p class="error-text" id="ln-error"><em>Last Name cannot be empty</em></p>
                     <input type="email" name="email" id="email" placeholder="Email Address" required>
-                    <p class="error-text"><em>Looks like this is not an email</em></p>
+                    <p class="error-text" id="email-error"><em>Looks like this is not an email</em></p>
                     <input type="password" name="password" id="password" placeholder="Password" min="8" max="16" required>
-                    <p class="error-text"><em>Password cannot be empty</em></p>
+                    <p class="error-text" id="password-error"><em>Password cannot be empty</em></p>
                     <button type="submit">Claim your free trial</button>
                     <p>By clicking the button, you are agreeing to our <span class="terms">Terms and Services</span></p>
                 </form>
             </div>
         </div>
     </main>
+    <script src="./script.js"></script>
 </body>
 </html>
