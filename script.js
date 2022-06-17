@@ -19,7 +19,7 @@ btn.addEventListener("click", (e) => {
     inputFields.forEach((field) => {
       field.style.border = "2px solid rgb(207, 141, 142)";
       field.style.background =
-        "background: url(./images/icon-error.svg) no-repeat 95%";
+        "url(./images/icon-error.svg) no-repeat 95%";
     });
     firstName.placeholder = "";
     lastName.placeholder = "";
