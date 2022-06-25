@@ -125,7 +125,7 @@ form p{
     }
     .flex-container{
         width: 100%;
-        display: block;
+        flex-direction: column;
     }   
     .left{
         margin-top: 40px;
